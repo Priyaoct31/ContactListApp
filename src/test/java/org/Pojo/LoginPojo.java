@@ -43,6 +43,43 @@ public LoginPojo() {
 	
 	@FindBy(xpath="//span[text() ='Email address is already in use']")
 	private WebElement signUpError;
+	
+	@FindBy(id="email")
+	private WebElement loginEmail;
+	
+	@FindBy(id = "password")
+	private WebElement loginPassw;
+	
+	@FindBy(id="submit")
+	private WebElement loginSubmitButton;
+
+	public WebElement getLoginSubmitButton() {
+		return loginSubmitButton;
+	}
+
+	public void setLoginSubmitButton(WebElement loginSubmitButton) {
+		this.loginSubmitButton = loginSubmitButton;
+	}
+
+	public WebElement getLoginEmail() {
+		return loginEmail;
+	}
+
+	public WebElement getLoginEmail(WebElement loginEmail) {
+		return loginEmail;
+	}
+
+	public void setLoginEmail(WebElement loginEmail) {
+		this.loginEmail = loginEmail;
+	}
+
+	public WebElement getLoginPassw() {
+		return loginPassw;
+	}
+
+	public void setLoginPassw(WebElement loginPassw) {
+		this.loginPassw = loginPassw;
+	}
 
 	public WebElement getSignUpError() {
 		return signUpError;

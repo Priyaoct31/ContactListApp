@@ -16,8 +16,7 @@ public class Executable extends BaseClass {
 	public static void main(String[] args) throws InterruptedException, IOException {
 		
 		
-		
-		
+				
 		launchBrowser();
 		maxWindow();
 		
